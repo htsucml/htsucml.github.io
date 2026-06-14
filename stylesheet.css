@@ -44,23 +44,30 @@ a:hover {
   margin-bottom: 6px;
 }
 
-.intro-text {
+.intro-lead {
   display: flow-root;
-  min-width: 0;
-  width: 100%;
+  margin-bottom: 8px;
+}
+
+.intro-followup {
+  clear: both;
+}
+
+.intro-lead p {
+  max-width: 740px;
 }
 
 .profile-photo {
   border: 1px solid #e6e1d8;
   display: block;
   height: auto;
-  max-width: 128px;
+  max-width: 118px;
   width: 100%;
 }
 
 .profile-photo-float {
   float: right;
-  margin: 6px 0 12px 20px;
+  margin: 2px 0 8px 18px;
 }
 
 h1 {
@@ -103,10 +110,6 @@ p {
   color: #48606f;
   font-size: 14px;
   margin-top: 6px;
-}
-
-.intro-text p {
-  max-width: 740px;
 }
 
 .opportunity-note {
@@ -331,7 +334,7 @@ code {
   }
 
   .profile-photo {
-    max-width: 120px;
+    max-width: 110px;
   }
 
   .profile-photo-float {
