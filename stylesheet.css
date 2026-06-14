@@ -48,16 +48,16 @@ a:hover {
 }
 
 .intro-photo-cell {
-  padding: 2px 0 0 28px;
+  padding: 4px 0 0 20px;
   vertical-align: top;
-  width: 190px;
+  width: 150px;
 }
 
 .profile-photo {
   border: 1px solid #e6e1d8;
   display: block;
   height: auto;
-  max-width: 170px;
+  max-width: 128px;
   width: 100%;
 }
 
@@ -337,12 +337,12 @@ code {
   }
 
   .intro-photo-cell {
-    padding: 16px 0 0;
+    padding: 14px 0 0;
     width: auto;
   }
 
   .profile-photo {
-    max-width: 150px;
+    max-width: 120px;
   }
 
   .section-heading {
