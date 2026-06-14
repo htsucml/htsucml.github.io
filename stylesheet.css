@@ -47,6 +47,20 @@ a:hover {
   width: 100%;
 }
 
+.intro-photo-cell {
+  padding: 2px 0 0 28px;
+  vertical-align: top;
+  width: 190px;
+}
+
+.profile-photo {
+  border: 1px solid #e6e1d8;
+  display: block;
+  height: auto;
+  max-width: 170px;
+  width: 100%;
+}
+
 h1 {
   color: #16202b;
   font-size: 44px;
@@ -312,6 +326,23 @@ code {
 @media (max-width: 640px) {
   .page-frame {
     padding: 16px 14px 34px;
+  }
+
+  .intro-table,
+  .intro-table tbody,
+  .intro-table tr,
+  .intro-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .intro-photo-cell {
+    padding: 16px 0 0;
+    width: auto;
+  }
+
+  .profile-photo {
+    max-width: 150px;
   }
 
   .section-heading {
