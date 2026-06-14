@@ -1,0 +1,329 @@
+/* Inspired by classic academic personal-site structure popularized by
+   Jon Barron's public homepage template. This project uses original
+   content, simplified styling, and registry-generated publication data. */
+
+html {
+  background: #fbfaf7;
+}
+
+body {
+  background: #fbfaf7;
+  color: #1d2733;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.58;
+  margin: 0;
+}
+
+a {
+  color: #176b87;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #114f63;
+  text-decoration: underline;
+}
+
+.page-frame {
+  border: 0;
+  border-spacing: 0;
+  margin: 0 auto;
+  max-width: 860px;
+  padding: 16px 22px 42px;
+  width: 100%;
+}
+
+.intro-table,
+.publication-table {
+  border: 0;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.intro-text {
+  padding: 0;
+  vertical-align: top;
+  width: 100%;
+}
+
+h1 {
+  color: #16202b;
+  font-size: 44px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.08;
+  margin: 0;
+}
+
+h2 {
+  border-bottom: 1px solid #e6e1d8;
+  color: #263544;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 14px;
+  padding-bottom: 6px;
+}
+
+h3 {
+  color: #16202b;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 0;
+}
+
+p {
+  margin: 0 0 12px;
+}
+
+.position {
+  color: #667085;
+  font-size: 15px;
+  margin-top: 7px;
+}
+
+.intro-note {
+  color: #48606f;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+.intro-text p {
+  max-width: 740px;
+}
+
+.opportunity-note {
+  color: #3b5361;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.site-nav {
+  align-items: center;
+  border-bottom: 1px solid #e8e1d6;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  padding-bottom: 8px;
+}
+
+.site-links {
+  color: #667085;
+  font-size: 13px;
+}
+
+.site-links a + a::before {
+  color: #98a2b3;
+  content: "/";
+  margin: 0 8px 0 6px;
+}
+
+.top-links {
+  color: #667085;
+  font-size: 14px;
+  margin-top: 14px;
+}
+
+.top-links a + a::before {
+  color: #98a2b3;
+  content: "·";
+  margin: 0 10px 0 8px;
+}
+
+.section-block {
+  margin-top: 22px;
+}
+
+.section-heading {
+  align-items: baseline;
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+}
+
+.section-link {
+  font-size: 14px;
+  margin: 0 0 10px;
+  white-space: nowrap;
+}
+
+.interest-list {
+  color: #334155;
+  margin: 0;
+  padding-left: 18px;
+}
+
+.interest-list li {
+  margin: 4px 0;
+}
+
+.compact-section {
+  margin-top: 18px;
+}
+
+.compact-interest-list li {
+  margin: 3px 0;
+}
+
+.publication-table tr:first-child .pub-text {
+  padding-top: 0;
+}
+
+.pub-text {
+  border-top: 1px solid #ede7dd;
+  padding: 13px 0 15px;
+  vertical-align: top;
+}
+
+.pub-title {
+  color: #16202b;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.pub-authors {
+  color: #4a5565;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.pub-meta {
+  color: #667085;
+  font-size: 13px;
+  margin-top: 3px;
+}
+
+.work-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.work-tag {
+  background: #eef5f7;
+  border: 1px solid #d6e6eb;
+  border-radius: 999px;
+  color: #3f6572;
+  display: inline-flex;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 3px 8px 2px;
+  text-transform: uppercase;
+}
+
+.pub-summary {
+  color: #334155;
+  margin-top: 6px;
+}
+
+.pub-links {
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+.pub-link + .pub-link::before {
+  color: #98a2b3;
+  content: "[";
+  margin: 0 6px 0 2px;
+}
+
+.pub-link + .pub-link::after {
+  content: "]";
+}
+
+.pub-links .pub-link:first-child::before {
+  content: "[";
+  margin-right: 4px;
+}
+
+.pub-links .pub-link:last-child::after {
+  content: "]";
+  margin-left: 4px;
+}
+
+.pub-links .pub-link:not(:first-child):not(:last-child)::after {
+  content: "";
+}
+
+.role-chip {
+  color: #a86f32;
+  font-size: 12px;
+}
+
+.publication-header {
+  margin-top: 8px;
+}
+
+.research-block p:last-of-type {
+  margin-bottom: 8px;
+}
+
+.rep-work {
+  margin-top: 8px;
+}
+
+.rep-label {
+  color: #667085;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.rep-list {
+  color: #334155;
+  margin: 0;
+  padding-left: 18px;
+}
+
+.rep-list li {
+  margin: 3px 0;
+}
+
+.rep-title {
+  font-weight: 500;
+}
+
+.rep-meta {
+  color: #667085;
+  font-size: 13px;
+}
+
+.publication-entry {
+  border-top: 1px solid #ede7dd;
+  padding: 11px 0 13px;
+}
+
+.publication-section {
+  margin-top: 24px;
+}
+
+.publication-section .publication-entry:first-of-type {
+  padding-top: 0;
+}
+
+code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 0.92em;
+}
+
+@media (max-width: 640px) {
+  .page-frame {
+    padding: 16px 14px 34px;
+  }
+
+  .section-heading {
+    align-items: flex-start;
+    display: block;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+}
