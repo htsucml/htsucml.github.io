@@ -34,26 +34,19 @@ a:hover {
   width: 100%;
 }
 
-.intro-table,
 .publication-table {
   border: 0;
   border-spacing: 0;
   width: 100%;
 }
 
-.intro-table,
-.intro-table tbody {
-  display: block;
-}
-
-.intro-table tr {
-  display: block;
+.intro-block {
+  margin-bottom: 6px;
 }
 
 .intro-text {
+  display: flow-root;
   min-width: 0;
-  padding: 0;
-  vertical-align: top;
   width: 100%;
 }
 
@@ -335,14 +328,6 @@ code {
 @media (max-width: 640px) {
   .page-frame {
     padding: 16px 14px 34px;
-  }
-
-  .intro-table,
-  .intro-table tbody,
-  .intro-table tr,
-  .intro-table td {
-    display: block;
-    width: 100%;
   }
 
   .profile-photo {
